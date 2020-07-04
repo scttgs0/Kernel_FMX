@@ -221,7 +221,7 @@ jmpcopy         LDA @l BOOT,X
                 BNE jmpcopy
 
 retry_boot      JSL DOS_INIT          ; Initialize the "disc operating system"
-                JSL FDC_INIT
+                ; JSL FDC_INIT
                 ; JSL FDC_TEST
                 ; JSL DOS_TEST
 
